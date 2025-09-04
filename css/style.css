@@ -13,7 +13,7 @@ header {
     background-color: #ff6f61; /* Màu đỏ san hô nổi bật */
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -38,7 +38,7 @@ header h1 {
     overflow-x: auto; /* Thêm thanh cuộn ngang nếu nội dung quá dài */
     -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
     position: sticky;
-    top: 61px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
+    top: 55px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
     z-index: 900;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -165,18 +165,34 @@ header h1 {
     }
 
     .menu-navbar {
-    display: flex;
-    justify-content: center; /* Căn giữa các mục menu */
-    background-color: #8c7ae6; /* Màu tím pastel */
-    padding: 0.8rem 0;
-    flex-wrap: nowrap; /* Đảm bảo các mục không xuống dòng */
-    overflow-x: auto; /* Thêm thanh cuộn ngang nếu quá dài */
-    -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
-    position: sticky;
-    top: 91px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
-    z-index: 900;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+        top: 79px;
+        justify-content: space-around;
+        padding: 0.5rem 0;
+    }
+
+    .menu-navbar a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+        margin: 0.2rem 0.3rem;
+        flex-basis: 45%;
+    }
+
+    .menu-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .category h2 {
+        font-size: 1.8rem;
+    }
+
+    .item-list {
+        grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 cột trên màn hình điện thoại */
+        gap: 1rem;
+    }
+
+    .menu-item img {
+        height: 180px;
+    }
 
 .menu-navbar a {
     flex-shrink: 0; /* Đảm bảo các mục không bị co lại */
