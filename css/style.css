@@ -47,7 +47,7 @@ header h1 {
     flex-shrink: 0; /* Đảm bảo các mục không bị co lại */
     color: #fff;
     text-decoration: none;
-    padding: 0.3rem 0.3rem;
+    padding: 0.3rem 0.6rem;
     font-weight: bold;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -168,13 +168,16 @@ header h1 {
         top: 79px; /* Điều chỉnh vị trí sticky cho điện thoại nếu header nhỏ hơn */
         justify-content: space-around;
         padding: 0.5rem 0;
+        flex-wrap: nowrap; /* Đảm bảo các nút nằm ngang hàng */
+        overflow-x: auto; /* Thêm thanh cuộn ngang nếu cần */
     }
 
     .menu-navbar a {
         padding: 0.3rem 0.6rem;
-        font-size: 0.85rem;
+        font-size: 0.95rem;
         margin: 0.2rem 0.3rem;
-        flex-basis: 45%; /* Hai cột trên điện thoại */
+        flex-basis: auto; /* Điều chỉnh lại để nút nằm ngang */
+        flex-shrink: 0; /* Ngăn các nút co lại */
     }
 
     .menu-container {
