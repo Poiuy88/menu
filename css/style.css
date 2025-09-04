@@ -47,9 +47,9 @@ header h1 {
     flex-shrink: 0; /* Đảm bảo các mục không bị co lại */
     color: #fff;
     text-decoration: none;
-    padding: 0.3rem 0.6rem;
+    padding: 0.3rem 0.3rem;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     border-radius: 20px;
     margin: 0.1rem 0.2rem;
