@@ -207,7 +207,7 @@ header h1 {
     }
 
     .item-list {
-        grid-template-columns: 1fr; /* Một cột trên điện thoại */
+        grid-template-columns: 2fr; /* Một cột trên điện thoại */
         gap: 1rem;
     }
 
