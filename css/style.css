@@ -1,0 +1,216 @@
+/* Thiết lập chung */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right bottom, #fde6e6, #f2e6ff); /* Nền gradient sinh động */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Tiêu đề */
+header {
+    background-color: #ff6f61; /* Màu đỏ san hô nổi bật */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-out; /* Hiệu ứng tiêu đề xuất hiện */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Thanh menu điều hướng */
+.menu-navbar {
+    display: flex;
+    justify-content: center; /* Căn giữa các mục menu */
+    background-color: #8c7ae6; /* Màu tím pastel */
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 91px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
+    z-index: 900;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+    border-radius: 25px; /* Bo tròn các nút menu */
+    margin: 0.3rem 0.5rem; /* Khoảng cách giữa các nút */
+    background-color: rgba(255, 255, 255, 0.2); /* Nền hơi trong suốt */
+}
+
+.menu-navbar a:hover {
+    background-color: #ffcc5c; /* Màu vàng cam khi hover */
+    color: #333;
+    transform: translateY(-3px); /* Hiệu ứng bay lên nhẹ khi hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nội dung menu */
+.menu-container {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out forwards; /* Hiệu ứng từng danh mục xuất hiện */
+    opacity: 0; /* Bắt đầu ẩn để tạo hiệu ứng */
+}
+
+.category:nth-child(1) { animation-delay: 0.2s; }
+.category:nth-child(2) { animation-delay: 0.4s; }
+.category:nth-child(3) { animation-delay: 0.6s; }
+/* Thêm delay cho các category còn lại nếu cần */
+
+
+.category h2 {
+    text-align: center;
+    color: #ff6f61; /* Màu tiêu đề danh mục */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.category h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc5c; /* Đường kẻ dưới tiêu đề */
+    border-radius: 2px;
+}
+
+.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Tăng kích thước tối thiểu cho item */
+    gap: 2rem; /* Tăng khoảng cách giữa các item */
+}
+
+.menu-item {
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover cho item */
+    border: 1px solid #eee;
+    display: flex; /* Dùng flexbox để căn chỉnh nội dung */
+    flex-direction: column;
+    justify-content: space-between; /* Đẩy giá xuống cuối */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px) scale(1.03); /* Hiệu ứng bay lên và phóng to nhẹ */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px; /* Chiều cao cố định cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh luôn lấp đầy không gian và cắt nếu cần */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease; /* Hiệu ứng zoom ảnh khi hover */
+}
+
+.menu-item:hover img {
+    transform: scale(1.05); /* Zoom ảnh nhẹ khi hover */
+}
+
+.menu-item h3 {
+    margin: 0.5rem 0 0.8rem;
+    font-size: 1.25rem;
+    color: #4a4a4a;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff6f61; /* Màu giá nổi bật */
+    font-size: 1.3rem;
+    margin-top: auto; /* Đẩy giá xuống cuối */
+}
+
+/* Tối ưu hóa cho màn hình điện thoại */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .menu-navbar {
+        top: 79px; /* Điều chỉnh vị trí sticky cho điện thoại nếu header nhỏ hơn */
+        justify-content: space-around;
+        padding: 0.5rem 0;
+    }
+
+    .menu-navbar a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+        margin: 0.2rem 0.3rem;
+        flex-basis: 45%; /* Hai cột trên điện thoại */
+    }
+
+    .menu-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .category h2 {
+        font-size: 1.8rem;
+    }
+
+    .item-list {
+        grid-template-columns: 1fr; /* Một cột trên điện thoại */
+        gap: 1rem;
+    }
+
+    .menu-item img {
+        height: 180px; /* Chiều cao ảnh lớn hơn trên điện thoại */
+    }
+}
+
+/* Hiệu ứng Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
