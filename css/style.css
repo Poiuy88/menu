@@ -33,7 +33,7 @@ header h1 {
     display: flex;
     justify-content: center; /* Căn giữa các mục menu */
     background-color: #8c7ae6; /* Màu tím pastel */
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     flex-wrap: nowrap; /* Buộc các mục nằm trên một hàng */
     overflow-x: auto; /* Thêm thanh cuộn ngang nếu nội dung quá dài */
     -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
@@ -47,9 +47,9 @@ header h1 {
     flex-shrink: 0; /* Đảm bảo các mục không bị co lại */
     color: #fff;
     text-decoration: none;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     border-radius: 20px;
     margin: 0.2rem 0.4rem;
@@ -165,7 +165,7 @@ header h1 {
     }
 
     .menu-navbar {
-        top: 79px;
+        top: 79px; /* Điều chỉnh vị trí sticky cho điện thoại nếu header nhỏ hơn */
         justify-content: space-around;
         padding: 0.5rem 0;
     }
@@ -174,7 +174,7 @@ header h1 {
         padding: 0.6rem 0.8rem;
         font-size: 0.95rem;
         margin: 0.2rem 0.3rem;
-        flex-basis: 45%;
+        flex-basis: 45%; /* Hai cột trên điện thoại */
     }
 
     .menu-container {
@@ -186,14 +186,14 @@ header h1 {
     }
 
     .item-list {
-        grid-template-columns: 1fr; /* Hiển thị 2 cột trên màn hình điện thoại */
+        grid-template-columns: 1fr; /* Một cột trên điện thoại */
         gap: 1rem;
     }
 
     .menu-item img {
-        height: 180px;
+        height: 180px; /* Chiều cao ảnh lớn hơn trên điện thoại */
     }
-    }
+}
 
 /* Hiệu ứng Keyframes */
 @keyframes fadeInDown {
