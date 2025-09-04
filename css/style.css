@@ -13,7 +13,7 @@ header {
     background-color: #ff6f61; /* Màu đỏ san hô nổi bật */
     color: #fff;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,7 +23,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -33,12 +33,12 @@ header h1 {
     display: flex;
     justify-content: center; /* Căn giữa các mục menu */
     background-color: #8c7ae6; /* Màu tím pastel */
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
     flex-wrap: nowrap; /* Buộc các mục nằm trên một hàng */
     overflow-x: auto; /* Thêm thanh cuộn ngang nếu nội dung quá dài */
     -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
     position: sticky;
-    top: 91px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
+    top: 61px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
     z-index: 900;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -49,7 +49,7 @@ header h1 {
     text-decoration: none;
     padding: 0.7rem 1.2rem;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     border-radius: 25px;
     margin: 0.3rem 0.5rem;
