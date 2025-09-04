@@ -186,7 +186,7 @@ header h1 {
     }
 
     .item-list {
-        grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 cột trên màn hình điện thoại */
+        grid-template-columns: 1fr; /* Hiển thị 2 cột trên màn hình điện thoại */
         gap: 1rem;
     }
 
