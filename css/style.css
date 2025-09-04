@@ -162,17 +162,38 @@ header h1 {
     }
 
     .menu-navbar {
-        top: 79px; /* Điều chỉnh vị trí sticky cho điện thoại nếu header nhỏ hơn */
-        justify-content: space-around;
-        padding: 0.5rem 0;
-    }
+    display: flex;
+    justify-content: center; /* Căn giữa các mục menu */
+    background-color: #8c7ae6; /* Màu tím pastel */
+    padding: 0.8rem 0;
+    flex-wrap: nowrap; /* Đảm bảo các mục không xuống dòng */
+    overflow-x: auto; /* Thêm thanh cuộn ngang nếu quá dài */
+    -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
+    position: sticky;
+    top: 91px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
+    z-index: 900;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    .menu-navbar a {
-        padding: 0.6rem 0.8rem;
-        font-size: 0.95rem;
-        margin: 0.2rem 0.3rem;
-        flex-basis: 45%; /* Hai cột trên điện thoại */
-    }
+.menu-navbar a {
+    flex-shrink: 0; /* Đảm bảo các mục không bị co lại */
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    margin: 0.3rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-navbar a:hover {
+    background-color: #ffcc5c;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
     .menu-container {
         padding: 1rem 0.5rem;
