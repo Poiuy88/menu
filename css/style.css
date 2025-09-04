@@ -33,7 +33,7 @@ header h1 {
     display: flex;
     justify-content: center; /* Căn giữa các mục menu */
     background-color: #8c7ae6; /* Màu tím pastel */
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
     flex-wrap: nowrap; /* Buộc các mục nằm trên một hàng */
     overflow-x: auto; /* Thêm thanh cuộn ngang nếu nội dung quá dài */
     -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
@@ -49,10 +49,10 @@ header h1 {
     text-decoration: none;
     padding: 0.3rem 0.6rem;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
-    border-radius: 20px;
-    margin: 0.2rem 0.4rem;
+    border-radius: 25px;
+    margin: 0.1rem 0.2rem;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
