@@ -193,44 +193,7 @@ header h1 {
     .menu-item img {
         height: 180px;
     }
-
-.menu-navbar a {
-    flex-shrink: 0; /* Đảm bảo các mục không bị co lại */
-    color: #fff;
-    text-decoration: none;
-    padding: 0.7rem 1.2rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    border-radius: 25px;
-    margin: 0.3rem 0.5rem;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.menu-navbar a:hover {
-    background-color: #ffcc5c;
-    color: #333;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-    .menu-container {
-        padding: 1rem 0.5rem;
     }
-
-    .category h2 {
-        font-size: 1.8rem;
-    }
-
-    .item-list {
-        grid-template-columns: 2fr; /* Một cột trên điện thoại */
-        gap: 1rem;
-    }
-
-    .menu-item img {
-        height: 180px; /* Chiều cao ảnh lớn hơn trên điện thoại */
-    }
-}
 
 /* Hiệu ứng Keyframes */
 @keyframes fadeInDown {
