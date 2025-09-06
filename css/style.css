@@ -38,7 +38,7 @@ header h1 {
     overflow-x: auto; /* Thêm thanh cuộn ngang nếu nội dung quá dài */
     -webkit-overflow-scrolling: touch; /* Tăng trải nghiệm cuộn trên iOS */
     position: sticky;
-    top: 55px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
+    top: 89px; /* Đặt dưới header, điều chỉnh nếu header cao hơn */
     z-index: 900;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
